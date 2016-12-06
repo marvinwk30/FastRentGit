@@ -1,0 +1,1174 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49B961EE1C84DBBF003F8E3E /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B961DB1C84DBBF003F8E3E /* FMDatabase+InMemoryOnDiskIO.m */; };
+		49B961EF1C84DBBF003F8E3E /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B961DE1C84DBBF003F8E3E /* FMDatabase+FTS3.m */; };
+		49B961F01C84DBBF003F8E3E /* FMTokenizers.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B961E01C84DBBF003F8E3E /* FMTokenizers.m */; };
+		49B961F11C84DBBF003F8E3E /* FMDatabase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49B961E41C84DBBF003F8E3E /* FMDatabase.mm */; };
+		49B961F21C84DBBF003F8E3E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B961E61C84DBBF003F8E3E /* FMDatabaseAdditions.m */; };
+		49B961F31C84DBBF003F8E3E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B961E81C84DBBF003F8E3E /* FMDatabasePool.m */; };
+		49B961F41C84DBBF003F8E3E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B961EA1C84DBBF003F8E3E /* FMDatabaseQueue.m */; };
+		49B961F51C84DBBF003F8E3E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B961ED1C84DBBF003F8E3E /* FMResultSet.m */; };
+		49B961F81C84DC21003F8E3E /* FRDBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B961F71C84DC21003F8E3E /* FRDBUtils.m */; };
+		49B961FA1C84E139003F8E3E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B961F91C84E139003F8E3E /* libsqlite3.tbd */; };
+		49B961FC1C84EEA6003F8E3E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B961FB1C84EEA6003F8E3E /* libz.tbd */; };
+		49B962021C84F5EF003F8E3E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B962011C84F5EF003F8E3E /* Security.framework */; };
+		49B962051C8501DE003F8E3E /* FRDataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B962041C8501DE003F8E3E /* FRDataAccess.m */; };
+		49B9620C1C855BB8003F8E3E /* FRAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B9620B1C855BB8003F8E3E /* FRAccount.m */; };
+		49B962111C86984C003F8E3E /* FRClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B962101C86984C003F8E3E /* FRClient.m */; };
+		49B962141C869FC2003F8E3E /* FRState.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B962131C869FC2003F8E3E /* FRState.m */; };
+		49C691B31C88BD3100C19D88 /* FRBooking.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C691B21C88BD3100C19D88 /* FRBooking.m */; };
+		580211571D5762730016E399 /* FREmptyContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580211561D5762730016E399 /* FREmptyContentViewController.m */; };
+		5803143A1DE3B85700A84ACE /* frdata_db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 580314391DE3B85700A84ACE /* frdata_db.sqlite */; };
+		580E2C0C1D68AEB70061606B /* FRAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580E2C0B1D68AEB70061606B /* FRAboutUsViewController.m */; };
+		581FD55E1C59D9F400038FF4 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 581FD5451C59D9F400038FF4 /* FSCalendar.m */; };
+		581FD55F1C59D9F400038FF4 /* FSCalendar+IBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 581FD5471C59D9F400038FF4 /* FSCalendar+IBExtension.m */; };
+		581FD5601C59D9F400038FF4 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 581FD5491C59D9F400038FF4 /* FSCalendarAppearance.m */; };
+		581FD5611C59D9F400038FF4 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 581FD54B1C59D9F400038FF4 /* FSCalendarCell.m */; };
+		581FD5621C59D9F400038FF4 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 581FD54D1C59D9F400038FF4 /* FSCalendarCollectionView.m */; };
+		581FD5631C59D9F400038FF4 /* FSCalendarConstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 581FD54F1C59D9F400038FF4 /* FSCalendarConstance.m */; };
+		581FD5641C59D9F400038FF4 /* FSCalendarFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 581FD5521C59D9F400038FF4 /* FSCalendarFlowLayout.m */; };
+		581FD5651C59D9F400038FF4 /* FSCalendarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 581FD5541C59D9F400038FF4 /* FSCalendarHeader.m */; };
+		581FD5661C59D9F400038FF4 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 581FD5561C59D9F400038FF4 /* FSCalendarStickyHeader.m */; };
+		581FD5671C59D9F400038FF4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 581FD5571C59D9F400038FF4 /* Info.plist */; };
+		581FD5681C59D9F400038FF4 /* NSDate+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 581FD5591C59D9F400038FF4 /* NSDate+FSExtension.m */; };
+		581FD5691C59D9F400038FF4 /* NSString+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 581FD55B1C59D9F400038FF4 /* NSString+FSExtension.m */; };
+		581FD56A1C59D9F400038FF4 /* UIView+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 581FD55D1C59D9F400038FF4 /* UIView+FSExtension.m */; };
+		58239C161D64ECDF00232C06 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58239C151D64ECDF00232C06 /* MessageUI.framework */; };
+		5824D2311CA97B6500EE3BBA /* FRBookingListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5824D22F1CA97B6500EE3BBA /* FRBookingListTableViewCell.m */; };
+		582EE9C11D0B6340008A41D9 /* FRCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 582EE9BF1D0B6340008A41D9 /* FRCommonTableViewCell.m */; };
+		582EE9C21D0B6340008A41D9 /* FRCommonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582EE9C01D0B6340008A41D9 /* FRCommonTableViewCell.xib */; };
+		5832A8D51CB5B7160051339B /* FRFilterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5832A8D41CB5B7160051339B /* FRFilterInfo.m */; };
+		5832A8D91CB5BAAE0051339B /* FRFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5832A8D81CB5BAAE0051339B /* FRFilterViewController.m */; };
+		583884FC1C77C8D1003029C3 /* FRDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 583884FB1C77C8D1003029C3 /* FRDatePickerView.xib */; };
+		583884FF1C77C8EB003029C3 /* FRDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 583884FE1C77C8EB003029C3 /* FRDatePickerView.m */; };
+		583885031C7C1636003029C3 /* FRPriceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 583885021C7C1636003029C3 /* FRPriceTableViewCell.m */; };
+		583885051C7C1661003029C3 /* FRPriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 583885041C7C1661003029C3 /* FRPriceTableViewCell.xib */; };
+		58499D601BFA3358009D6A85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58499D5F1BFA3358009D6A85 /* main.m */; };
+		58499D631BFA3358009D6A85 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58499D621BFA3358009D6A85 /* AppDelegate.mm */; };
+		58499D661BFA3358009D6A85 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58499D651BFA3358009D6A85 /* MainMenuViewController.m */; };
+		58499D691BFA3358009D6A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58499D671BFA3358009D6A85 /* Main.storyboard */; };
+		58499D6B1BFA3358009D6A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58499D6A1BFA3358009D6A85 /* Assets.xcassets */; };
+		58499D7C1BFA3473009D6A85 /* UIStoryboard+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 58499D7B1BFA3473009D6A85 /* UIStoryboard+Bundle.m */; };
+		58499D901BFA3693009D6A85 /* AMSlideMenuLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58499D841BFA3693009D6A85 /* AMSlideMenuLeftTableViewController.m */; };
+		58499D911BFA3693009D6A85 /* AMSlideMenuMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58499D861BFA3693009D6A85 /* AMSlideMenuMainViewController.m */; };
+		58499D931BFA3693009D6A85 /* AMSlideMenuRightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58499D8B1BFA3693009D6A85 /* AMSlideMenuRightTableViewController.m */; };
+		58499D941BFA3693009D6A85 /* UIViewController+AMSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 58499D8D1BFA3693009D6A85 /* UIViewController+AMSlideMenu.m */; };
+		58499D981BFA3730009D6A85 /* LeftMenuTVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58499D971BFA3730009D6A85 /* LeftMenuTVC.mm */; };
+		58499DB21BFA3820009D6A85 /* AMSlideMenuContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 58499DAD1BFA3820009D6A85 /* AMSlideMenuContentSegue.m */; };
+		58499DB31BFA3820009D6A85 /* AMSlideMenuLeftMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 58499DAF1BFA3820009D6A85 /* AMSlideMenuLeftMenuSegue.m */; };
+		58499DB41BFA3820009D6A85 /* AMSlideMenuRightMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 58499DB11BFA3820009D6A85 /* AMSlideMenuRightMenuSegue.m */; };
+		58499DBD1BFA3BF9009D6A85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58499DBC1BFA3BF9009D6A85 /* CoreGraphics.framework */; };
+		58499DBF1BFA3D20009D6A85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58499DBE1BFA3D20009D6A85 /* UIKit.framework */; };
+		58499DC11BFA3D28009D6A85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58499DC01BFA3D28009D6A85 /* Foundation.framework */; };
+		584EF79E1D53ED00006043D2 /* NSString+FRFormatterPunctuation.m in Sources */ = {isa = PBXBuildFile; fileRef = 584EF79D1D53ED00006043D2 /* NSString+FRFormatterPunctuation.m */; };
+		585A1B711DB55A96005287A0 /* FRNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 585A1B701DB55A96005287A0 /* FRNotificationsViewController.m */; };
+		585A1B741DB57932005287A0 /* FRAddEditBookingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 585A1B731DB57932005287A0 /* FRAddEditBookingViewController.mm */; };
+		585AF68C1D4AB1D200911061 /* FRAccountImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 585AF68B1D4AB1D200911061 /* FRAccountImageView.m */; };
+		585AF69A1D4AB61E00911061 /* FRProfileMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 585AF6981D4AB61E00911061 /* FRProfileMenuTableViewCell.m */; };
+		585AF69B1D4AB61E00911061 /* FRProfileMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 585AF6991D4AB61E00911061 /* FRProfileMenuTableViewCell.xib */; };
+		5860D30E1CC595E7001779AC /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5860D30D1CC595E7001779AC /* UICKeyChainStore.m */; };
+		5860D31B1CC975DD001779AC /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5860D31A1CC975DD001779AC /* NSString+MD5Addition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		586A2A731C66E73100D9096C /* FRDateHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586A2A721C66E73100D9096C /* FRDateHeader.xib */; };
+		586A2A761C66E77400D9096C /* FRDateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 586A2A751C66E77400D9096C /* FRDateHeader.m */; };
+		586B6F4E1CBEF0A800BDBCC9 /* FRConfigurationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 586B6F4D1CBEF0A800BDBCC9 /* FRConfigurationManager.m */; };
+		586B6F511CBEF46300BDBCC9 /* UIImage+AssetImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 586B6F501CBEF46300BDBCC9 /* UIImage+AssetImage.mm */; };
+		586B6F541CBEFB2100BDBCC9 /* Utilities.mm in Sources */ = {isa = PBXBuildFile; fileRef = 586B6F531CBEFB2100BDBCC9 /* Utilities.mm */; };
+		587D2EA81C5D466C005413C1 /* FRFakeAddEditBookingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 587D2EA71C5D466C005413C1 /* FRFakeAddEditBookingViewController.mm */; };
+		587D2EDF1C5E84B3005413C1 /* FRModalNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D2EDE1C5E84B3005413C1 /* FRModalNavigationBar.m */; };
+		588DCBA31C580B2000FE6370 /* FRStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DCBA21C580B2000FE6370 /* FRStatisticsViewController.m */; };
+		588F6CA91D88997600428381 /* FRNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 588F6CA81D88997600428381 /* FRNotificationManager.m */; };
+		589838881C56D32600ED69D9 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 589838871C56D32600ED69D9 /* MainNavigationController.m */; };
+		5898388B1C56D4C900ED69D9 /* FRCalendarBookingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5898388A1C56D4C900ED69D9 /* FRCalendarBookingViewController.mm */; };
+		589838941C56DBCD00ED69D9 /* FRTaskRemainingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 589838931C56DBCD00ED69D9 /* FRTaskRemainingViewController.mm */; };
+		589838971C56DC7900ED69D9 /* FRMyHostingsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 589838961C56DC7900ED69D9 /* FRMyHostingsViewController.mm */; };
+		589B2C851D79D11A00AD14AB /* FRNotificationCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 589B2C841D79D11A00AD14AB /* FRNotificationCount.m */; };
+		589B2C881D79D14100AD14AB /* FRNotificationCount.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589B2C861D79D14100AD14AB /* FRNotificationCount.xib */; };
+		589F47501C99AEFB00EBD830 /* FRPhoneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F474E1C99AEFB00EBD830 /* FRPhoneTableViewCell.m */; };
+		589F47511C99AEFB00EBD830 /* FRPhoneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589F474F1C99AEFB00EBD830 /* FRPhoneTableViewCell.xib */; };
+		589F47551C99CA8700EBD830 /* FRPhotosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F47531C99CA8700EBD830 /* FRPhotosTableViewCell.m */; };
+		589F47561C99CA8700EBD830 /* FRPhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589F47541C99CA8700EBD830 /* FRPhotosTableViewCell.xib */; };
+		589F47591C9A576B00EBD830 /* FRImagePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F47581C9A576B00EBD830 /* FRImagePool.m */; };
+		589F475D1C9C8FCB00EBD830 /* FRCommonEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F475C1C9C8FCB00EBD830 /* FRCommonEditTableViewCell.m */; };
+		589F47601CA33E9C00EBD830 /* FRAddEditOwnerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 589F475F1CA33E9C00EBD830 /* FRAddEditOwnerViewController.mm */; };
+		58A6BCE41C84E64D000FDB81 /* FRHostingListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58A6BCE21C84E64D000FDB81 /* FRHostingListTableViewCell.xib */; };
+		58A76BEB1CC2F712007606E2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A76BEA1CC2F712007606E2 /* QuartzCore.framework */; };
+		58BDD8321C86460000551029 /* FRAddEditHostingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58BDD8311C86460000551029 /* FRAddEditHostingViewController.mm */; };
+		58BDD8361C864AE400551029 /* FRCustomModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BDD8351C864AE400551029 /* FRCustomModalViewController.m */; };
+		58D133FA1C5FC0880059CA77 /* AccordionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D133F91C5FC0880059CA77 /* AccordionView.m */; };
+		58D133FE1C5FC2B80059CA77 /* FRDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D133FD1C5FC2B80059CA77 /* FRDescriptionTableViewCell.m */; };
+		58D134011C5FC2FB0059CA77 /* FRDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58D133FF1C5FC2FB0059CA77 /* FRDescriptionTableViewCell.xib */; };
+		58D885531CB703CC00D545A3 /* FRBookingListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58D885521CB703CC00D545A3 /* FRBookingListTableViewCell.xib */; };
+		58D885581CB7531D00D545A3 /* FRAccordionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58D885571CB7531D00D545A3 /* FRAccordionHeader.xib */; };
+		58E269911CDD924900FF1F36 /* SevenSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E269901CDD924900FF1F36 /* SevenSwitch.m */; };
+		58EE56241CD6ABE300387AA7 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58EE56231CD6ABE300387AA7 /* MyriadPro-Regular.otf */; };
+		58EE56261CD6ACD300387AA7 /* MyriadPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58EE56251CD6ACD300387AA7 /* MyriadPro-Bold.otf */; };
+		58EE56291CDC46BE00387AA7 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58EE56271CDC46BE00387AA7 /* Roboto-Bold.ttf */; };
+		58EE562A1CDC46BE00387AA7 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58EE56281CDC46BE00387AA7 /* Roboto-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		49B961DA1C84DBBF003F8E3E /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		49B961DB1C84DBBF003F8E3E /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		49B961DD1C84DBBF003F8E3E /* FMDatabase+FTS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+FTS3.h"; sourceTree = "<group>"; };
+		49B961DE1C84DBBF003F8E3E /* FMDatabase+FTS3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+FTS3.m"; sourceTree = "<group>"; };
+		49B961DF1C84DBBF003F8E3E /* FMTokenizers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTokenizers.h; sourceTree = "<group>"; };
+		49B961E01C84DBBF003F8E3E /* FMTokenizers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTokenizers.m; sourceTree = "<group>"; };
+		49B961E11C84DBBF003F8E3E /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
+		49B961E31C84DBBF003F8E3E /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		49B961E41C84DBBF003F8E3E /* FMDatabase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FMDatabase.mm; sourceTree = "<group>"; };
+		49B961E51C84DBBF003F8E3E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		49B961E61C84DBBF003F8E3E /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		49B961E71C84DBBF003F8E3E /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		49B961E81C84DBBF003F8E3E /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		49B961E91C84DBBF003F8E3E /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		49B961EA1C84DBBF003F8E3E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		49B961EB1C84DBBF003F8E3E /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		49B961EC1C84DBBF003F8E3E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		49B961ED1C84DBBF003F8E3E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		49B961F61C84DC21003F8E3E /* FRDBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDBUtils.h; sourceTree = "<group>"; };
+		49B961F71C84DC21003F8E3E /* FRDBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDBUtils.m; sourceTree = "<group>"; };
+		49B961F91C84E139003F8E3E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		49B961FB1C84EEA6003F8E3E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		49B962011C84F5EF003F8E3E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		49B962031C8501DE003F8E3E /* FRDataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDataAccess.h; sourceTree = "<group>"; };
+		49B962041C8501DE003F8E3E /* FRDataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDataAccess.m; sourceTree = "<group>"; };
+		49B962061C850209003F8E3E /* FRSchemaProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRSchemaProtocol.h; sourceTree = "<group>"; };
+		49B9620A1C855BB8003F8E3E /* FRAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRAccount.h; sourceTree = "<group>"; };
+		49B9620B1C855BB8003F8E3E /* FRAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRAccount.m; sourceTree = "<group>"; };
+		49B9620F1C86984C003F8E3E /* FRClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRClient.h; sourceTree = "<group>"; };
+		49B962101C86984C003F8E3E /* FRClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRClient.m; sourceTree = "<group>"; };
+		49B962121C869FC2003F8E3E /* FRState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRState.h; sourceTree = "<group>"; };
+		49B962131C869FC2003F8E3E /* FRState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRState.m; sourceTree = "<group>"; };
+		49C691B11C88BD3100C19D88 /* FRBooking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBooking.h; sourceTree = "<group>"; };
+		49C691B21C88BD3100C19D88 /* FRBooking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBooking.m; sourceTree = "<group>"; };
+		580211551D5762730016E399 /* FREmptyContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FREmptyContentViewController.h; sourceTree = "<group>"; };
+		580211561D5762730016E399 /* FREmptyContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FREmptyContentViewController.m; sourceTree = "<group>"; };
+		580314391DE3B85700A84ACE /* frdata_db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = frdata_db.sqlite; sourceTree = "<group>"; };
+		580E2C0A1D68AEB70061606B /* FRAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRAboutUsViewController.h; sourceTree = "<group>"; };
+		580E2C0B1D68AEB70061606B /* FRAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRAboutUsViewController.m; sourceTree = "<group>"; };
+		581FD5441C59D9F400038FF4 /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
+		581FD5451C59D9F400038FF4 /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
+		581FD5461C59D9F400038FF4 /* FSCalendar+IBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FSCalendar+IBExtension.h"; sourceTree = "<group>"; };
+		581FD5471C59D9F400038FF4 /* FSCalendar+IBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar+IBExtension.m"; sourceTree = "<group>"; };
+		581FD5481C59D9F400038FF4 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
+		581FD5491C59D9F400038FF4 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
+		581FD54A1C59D9F400038FF4 /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
+		581FD54B1C59D9F400038FF4 /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
+		581FD54C1C59D9F400038FF4 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		581FD54D1C59D9F400038FF4 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		581FD54E1C59D9F400038FF4 /* FSCalendarConstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstance.h; sourceTree = "<group>"; };
+		581FD54F1C59D9F400038FF4 /* FSCalendarConstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstance.m; sourceTree = "<group>"; };
+		581FD5501C59D9F400038FF4 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		581FD5511C59D9F400038FF4 /* FSCalendarFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarFlowLayout.h; sourceTree = "<group>"; };
+		581FD5521C59D9F400038FF4 /* FSCalendarFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarFlowLayout.m; sourceTree = "<group>"; };
+		581FD5531C59D9F400038FF4 /* FSCalendarHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeader.h; sourceTree = "<group>"; };
+		581FD5541C59D9F400038FF4 /* FSCalendarHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeader.m; sourceTree = "<group>"; };
+		581FD5551C59D9F400038FF4 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		581FD5561C59D9F400038FF4 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		581FD5571C59D9F400038FF4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		581FD5581C59D9F400038FF4 /* NSDate+FSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+FSExtension.h"; sourceTree = "<group>"; };
+		581FD5591C59D9F400038FF4 /* NSDate+FSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FSExtension.m"; sourceTree = "<group>"; };
+		581FD55A1C59D9F400038FF4 /* NSString+FSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FSExtension.h"; sourceTree = "<group>"; };
+		581FD55B1C59D9F400038FF4 /* NSString+FSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FSExtension.m"; sourceTree = "<group>"; };
+		581FD55C1C59D9F400038FF4 /* UIView+FSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FSExtension.h"; sourceTree = "<group>"; };
+		581FD55D1C59D9F400038FF4 /* UIView+FSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FSExtension.m"; sourceTree = "<group>"; };
+		58239C151D64ECDF00232C06 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		58239C171D64F40A00232C06 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		5824D22E1CA97B6500EE3BBA /* FRBookingListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBookingListTableViewCell.h; sourceTree = "<group>"; };
+		5824D22F1CA97B6500EE3BBA /* FRBookingListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBookingListTableViewCell.m; sourceTree = "<group>"; };
+		582EE9BE1D0B6340008A41D9 /* FRCommonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCommonTableViewCell.h; sourceTree = "<group>"; };
+		582EE9BF1D0B6340008A41D9 /* FRCommonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCommonTableViewCell.m; sourceTree = "<group>"; };
+		582EE9C01D0B6340008A41D9 /* FRCommonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FRCommonTableViewCell.xib; path = FastRent/Base.lproj/FRCommonTableViewCell.xib; sourceTree = "<group>"; };
+		5832A8D31CB5B7160051339B /* FRFilterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFilterInfo.h; sourceTree = "<group>"; };
+		5832A8D41CB5B7160051339B /* FRFilterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFilterInfo.m; sourceTree = "<group>"; };
+		5832A8D71CB5BAAE0051339B /* FRFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFilterViewController.h; sourceTree = "<group>"; };
+		5832A8D81CB5BAAE0051339B /* FRFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFilterViewController.m; sourceTree = "<group>"; };
+		583884FB1C77C8D1003029C3 /* FRDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FRDatePickerView.xib; path = FastRent/Base.lproj/FRDatePickerView.xib; sourceTree = "<group>"; };
+		583884FD1C77C8EB003029C3 /* FRDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDatePickerView.h; sourceTree = "<group>"; };
+		583884FE1C77C8EB003029C3 /* FRDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDatePickerView.m; sourceTree = "<group>"; };
+		583885001C77C983003029C3 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		583885011C7C1636003029C3 /* FRPriceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPriceTableViewCell.h; sourceTree = "<group>"; };
+		583885021C7C1636003029C3 /* FRPriceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPriceTableViewCell.m; sourceTree = "<group>"; };
+		583885041C7C1661003029C3 /* FRPriceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FRPriceTableViewCell.xib; path = FastRent/Base.lproj/FRPriceTableViewCell.xib; sourceTree = "<group>"; };
+		58499D5B1BFA3358009D6A85 /* FastRent Agenda Free.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FastRent Agenda Free.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58499D5F1BFA3358009D6A85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58499D611BFA3358009D6A85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		58499D621BFA3358009D6A85 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		58499D641BFA3358009D6A85 /* MainMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		58499D651BFA3358009D6A85 /* MainMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		58499D681BFA3358009D6A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58499D6A1BFA3358009D6A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FastRent/Assets.xcassets; sourceTree = "<group>"; };
+		58499D6F1BFA3358009D6A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58499D7A1BFA3473009D6A85 /* UIStoryboard+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Bundle.h"; sourceTree = "<group>"; };
+		58499D7B1BFA3473009D6A85 /* UIStoryboard+Bundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Bundle.m"; sourceTree = "<group>"; };
+		58499D831BFA3693009D6A85 /* AMSlideMenuLeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuLeftTableViewController.h; sourceTree = "<group>"; };
+		58499D841BFA3693009D6A85 /* AMSlideMenuLeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuLeftTableViewController.m; sourceTree = "<group>"; };
+		58499D851BFA3693009D6A85 /* AMSlideMenuMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuMainViewController.h; sourceTree = "<group>"; };
+		58499D861BFA3693009D6A85 /* AMSlideMenuMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuMainViewController.m; sourceTree = "<group>"; };
+		58499D871BFA3693009D6A85 /* AMSlideMenuProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuProtocols.h; sourceTree = "<group>"; };
+		58499D8A1BFA3693009D6A85 /* AMSlideMenuRightTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuRightTableViewController.h; sourceTree = "<group>"; };
+		58499D8B1BFA3693009D6A85 /* AMSlideMenuRightTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuRightTableViewController.m; sourceTree = "<group>"; };
+		58499D8C1BFA3693009D6A85 /* UIViewController+AMSlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AMSlideMenu.h"; sourceTree = "<group>"; };
+		58499D8D1BFA3693009D6A85 /* UIViewController+AMSlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AMSlideMenu.m"; sourceTree = "<group>"; };
+		58499D961BFA3730009D6A85 /* LeftMenuTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTVC.h; sourceTree = "<group>"; };
+		58499D971BFA3730009D6A85 /* LeftMenuTVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeftMenuTVC.mm; sourceTree = "<group>"; };
+		58499DAC1BFA3820009D6A85 /* AMSlideMenuContentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuContentSegue.h; sourceTree = "<group>"; };
+		58499DAD1BFA3820009D6A85 /* AMSlideMenuContentSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuContentSegue.m; sourceTree = "<group>"; };
+		58499DAE1BFA3820009D6A85 /* AMSlideMenuLeftMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuLeftMenuSegue.h; sourceTree = "<group>"; };
+		58499DAF1BFA3820009D6A85 /* AMSlideMenuLeftMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuLeftMenuSegue.m; sourceTree = "<group>"; };
+		58499DB01BFA3820009D6A85 /* AMSlideMenuRightMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuRightMenuSegue.h; sourceTree = "<group>"; };
+		58499DB11BFA3820009D6A85 /* AMSlideMenuRightMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuRightMenuSegue.m; sourceTree = "<group>"; };
+		58499DBA1BFA3A22009D6A85 /* FastRent Agenda Free-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FastRent Agenda Free-Prefix.pch"; sourceTree = "<group>"; };
+		58499DBC1BFA3BF9009D6A85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		58499DBE1BFA3D20009D6A85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		58499DC01BFA3D28009D6A85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		584EF7911D50F147006043D2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		584EF7921D50F147006043D2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = FastRent/es.lproj/FRDescriptionTableViewCell.strings; sourceTree = "<group>"; };
+		584EF7961D50F147006043D2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = FastRent/es.lproj/FRHostingListTableViewCell.strings; sourceTree = "<group>"; };
+		584EF79C1D53ED00006043D2 /* NSString+FRFormatterPunctuation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FRFormatterPunctuation.h"; sourceTree = "<group>"; };
+		584EF79D1D53ED00006043D2 /* NSString+FRFormatterPunctuation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FRFormatterPunctuation.m"; sourceTree = "<group>"; };
+		585A1B6F1DB55A96005287A0 /* FRNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRNotificationsViewController.h; sourceTree = "<group>"; };
+		585A1B701DB55A96005287A0 /* FRNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRNotificationsViewController.m; sourceTree = "<group>"; };
+		585A1B721DB57932005287A0 /* FRAddEditBookingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRAddEditBookingViewController.h; sourceTree = "<group>"; };
+		585A1B731DB57932005287A0 /* FRAddEditBookingViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FRAddEditBookingViewController.mm; sourceTree = "<group>"; };
+		585AF68A1D4AB1D200911061 /* FRAccountImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRAccountImageView.h; sourceTree = "<group>"; };
+		585AF68B1D4AB1D200911061 /* FRAccountImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRAccountImageView.m; sourceTree = "<group>"; };
+		585AF6971D4AB61E00911061 /* FRProfileMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRProfileMenuTableViewCell.h; sourceTree = "<group>"; };
+		585AF6981D4AB61E00911061 /* FRProfileMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRProfileMenuTableViewCell.m; sourceTree = "<group>"; };
+		585AF6991D4AB61E00911061 /* FRProfileMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FRProfileMenuTableViewCell.xib; path = FastRent/Classes/GUI/FRProfileMenuTableViewCell.xib; sourceTree = "<group>"; };
+		5860D30C1CC595E7001779AC /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
+		5860D30D1CC595E7001779AC /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICKeyChainStore.m; sourceTree = "<group>"; };
+		5860D3131CC96BBF001779AC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		5860D3191CC975DD001779AC /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		5860D31A1CC975DD001779AC /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		586A2A721C66E73100D9096C /* FRDateHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FRDateHeader.xib; path = FastRent/Base.lproj/FRDateHeader.xib; sourceTree = "<group>"; };
+		586A2A741C66E77400D9096C /* FRDateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDateHeader.h; sourceTree = "<group>"; };
+		586A2A751C66E77400D9096C /* FRDateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDateHeader.m; sourceTree = "<group>"; };
+		586B6F4C1CBEF0A800BDBCC9 /* FRConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRConfigurationManager.h; sourceTree = "<group>"; };
+		586B6F4D1CBEF0A800BDBCC9 /* FRConfigurationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRConfigurationManager.m; sourceTree = "<group>"; };
+		586B6F4F1CBEF46300BDBCC9 /* UIImage+AssetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AssetImage.h"; sourceTree = "<group>"; };
+		586B6F501CBEF46300BDBCC9 /* UIImage+AssetImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+AssetImage.mm"; sourceTree = "<group>"; };
+		586B6F521CBEFB2100BDBCC9 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		586B6F531CBEFB2100BDBCC9 /* Utilities.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Utilities.mm; sourceTree = "<group>"; };
+		587D2EA61C5D466C005413C1 /* FRFakeAddEditBookingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFakeAddEditBookingViewController.h; sourceTree = "<group>"; };
+		587D2EA71C5D466C005413C1 /* FRFakeAddEditBookingViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FRFakeAddEditBookingViewController.mm; sourceTree = "<group>"; };
+		587D2EDD1C5E84B3005413C1 /* FRModalNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRModalNavigationBar.h; sourceTree = "<group>"; };
+		587D2EDE1C5E84B3005413C1 /* FRModalNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRModalNavigationBar.m; sourceTree = "<group>"; };
+		588DCBA11C580B2000FE6370 /* FRStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRStatisticsViewController.h; sourceTree = "<group>"; };
+		588DCBA21C580B2000FE6370 /* FRStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRStatisticsViewController.m; sourceTree = "<group>"; };
+		588F6CA71D88997600428381 /* FRNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRNotificationManager.h; sourceTree = "<group>"; };
+		588F6CA81D88997600428381 /* FRNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRNotificationManager.m; sourceTree = "<group>"; };
+		589838851C56CCFE00ED69D9 /* FRLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRLanguage.h; sourceTree = "<group>"; };
+		589838861C56D32600ED69D9 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		589838871C56D32600ED69D9 /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		589838891C56D4C900ED69D9 /* FRCalendarBookingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCalendarBookingViewController.h; sourceTree = "<group>"; };
+		5898388A1C56D4C900ED69D9 /* FRCalendarBookingViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FRCalendarBookingViewController.mm; sourceTree = "<group>"; };
+		589838921C56DBCD00ED69D9 /* FRTaskRemainingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRTaskRemainingViewController.h; sourceTree = "<group>"; };
+		589838931C56DBCD00ED69D9 /* FRTaskRemainingViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FRTaskRemainingViewController.mm; sourceTree = "<group>"; };
+		589838951C56DC7900ED69D9 /* FRMyHostingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMyHostingsViewController.h; sourceTree = "<group>"; };
+		589838961C56DC7900ED69D9 /* FRMyHostingsViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FRMyHostingsViewController.mm; sourceTree = "<group>"; };
+		589B2C831D79D11A00AD14AB /* FRNotificationCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRNotificationCount.h; sourceTree = "<group>"; };
+		589B2C841D79D11A00AD14AB /* FRNotificationCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRNotificationCount.m; sourceTree = "<group>"; };
+		589B2C871D79D14100AD14AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = FastRent/Base.lproj/FRNotificationCount.xib; sourceTree = "<group>"; };
+		589F474D1C99AEFB00EBD830 /* FRPhoneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPhoneTableViewCell.h; sourceTree = "<group>"; };
+		589F474E1C99AEFB00EBD830 /* FRPhoneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPhoneTableViewCell.m; sourceTree = "<group>"; };
+		589F474F1C99AEFB00EBD830 /* FRPhoneTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FRPhoneTableViewCell.xib; path = FastRent/Base.lproj/FRPhoneTableViewCell.xib; sourceTree = "<group>"; };
+		589F47521C99CA8700EBD830 /* FRPhotosTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPhotosTableViewCell.h; sourceTree = "<group>"; };
+		589F47531C99CA8700EBD830 /* FRPhotosTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPhotosTableViewCell.m; sourceTree = "<group>"; };
+		589F47541C99CA8700EBD830 /* FRPhotosTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FRPhotosTableViewCell.xib; path = FastRent/Base.lproj/FRPhotosTableViewCell.xib; sourceTree = "<group>"; };
+		589F47571C9A576B00EBD830 /* FRImagePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRImagePool.h; sourceTree = "<group>"; };
+		589F47581C9A576B00EBD830 /* FRImagePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRImagePool.m; sourceTree = "<group>"; };
+		589F475B1C9C8FCB00EBD830 /* FRCommonEditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCommonEditTableViewCell.h; sourceTree = "<group>"; };
+		589F475C1C9C8FCB00EBD830 /* FRCommonEditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCommonEditTableViewCell.m; sourceTree = "<group>"; };
+		589F475E1CA33E9C00EBD830 /* FRAddEditOwnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRAddEditOwnerViewController.h; sourceTree = "<group>"; };
+		589F475F1CA33E9C00EBD830 /* FRAddEditOwnerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FRAddEditOwnerViewController.mm; sourceTree = "<group>"; };
+		58A6BCE31C84E64D000FDB81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = FastRent/Base.lproj/FRHostingListTableViewCell.xib; sourceTree = "<group>"; };
+		58A76BEA1CC2F712007606E2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		58BDD8301C86460000551029 /* FRAddEditHostingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRAddEditHostingViewController.h; sourceTree = "<group>"; };
+		58BDD8311C86460000551029 /* FRAddEditHostingViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FRAddEditHostingViewController.mm; sourceTree = "<group>"; };
+		58BDD8341C864AE400551029 /* FRCustomModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCustomModalViewController.h; sourceTree = "<group>"; };
+		58BDD8351C864AE400551029 /* FRCustomModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCustomModalViewController.m; sourceTree = "<group>"; };
+		58BDD8371C869B1900551029 /* FRGlobals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRGlobals.h; sourceTree = "<group>"; };
+		58D133F81C5FC0880059CA77 /* AccordionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccordionView.h; sourceTree = "<group>"; };
+		58D133F91C5FC0880059CA77 /* AccordionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccordionView.m; sourceTree = "<group>"; };
+		58D133FC1C5FC2B80059CA77 /* FRDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDescriptionTableViewCell.h; sourceTree = "<group>"; };
+		58D133FD1C5FC2B80059CA77 /* FRDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDescriptionTableViewCell.m; sourceTree = "<group>"; };
+		58D134001C5FC2FB0059CA77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = FastRent/Base.lproj/FRDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		58D885521CB703CC00D545A3 /* FRBookingListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FRBookingListTableViewCell.xib; path = FastRent/Base.lproj/FRBookingListTableViewCell.xib; sourceTree = "<group>"; };
+		58D885571CB7531D00D545A3 /* FRAccordionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FRAccordionHeader.xib; path = FastRent/Base.lproj/FRAccordionHeader.xib; sourceTree = "<group>"; };
+		58E2698F1CDD924900FF1F36 /* SevenSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SevenSwitch.h; sourceTree = "<group>"; };
+		58E269901CDD924900FF1F36 /* SevenSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SevenSwitch.m; sourceTree = "<group>"; };
+		58EE56231CD6ABE300387AA7 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
+		58EE56251CD6ACD300387AA7 /* MyriadPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Bold.otf"; sourceTree = "<group>"; };
+		58EE56271CDC46BE00387AA7 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		58EE56281CDC46BE00387AA7 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58499D581BFA3358009D6A85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58239C161D64ECDF00232C06 /* MessageUI.framework in Frameworks */,
+				58A76BEB1CC2F712007606E2 /* QuartzCore.framework in Frameworks */,
+				49B962021C84F5EF003F8E3E /* Security.framework in Frameworks */,
+				49B961FC1C84EEA6003F8E3E /* libz.tbd in Frameworks */,
+				49B961FA1C84E139003F8E3E /* libsqlite3.tbd in Frameworks */,
+				58499DC11BFA3D28009D6A85 /* Foundation.framework in Frameworks */,
+				58499DBF1BFA3D20009D6A85 /* UIKit.framework in Frameworks */,
+				58499DBD1BFA3BF9009D6A85 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49B961D61C84DAA4003F8E3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49B9620A1C855BB8003F8E3E /* FRAccount.h */,
+				49B9620B1C855BB8003F8E3E /* FRAccount.m */,
+				49B962031C8501DE003F8E3E /* FRDataAccess.h */,
+				49B962041C8501DE003F8E3E /* FRDataAccess.m */,
+				49B962061C850209003F8E3E /* FRSchemaProtocol.h */,
+				49B9620F1C86984C003F8E3E /* FRClient.h */,
+				49B962101C86984C003F8E3E /* FRClient.m */,
+				49B962121C869FC2003F8E3E /* FRState.h */,
+				49B962131C869FC2003F8E3E /* FRState.m */,
+				49C691B11C88BD3100C19D88 /* FRBooking.h */,
+				49C691B21C88BD3100C19D88 /* FRBooking.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49B961D71C84DB85003F8E3E /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				5860D30B1CC595E7001779AC /* UICKeyChainStore */,
+				49B961D81C84DBBF003F8E3E /* FMDB */,
+			);
+			name = Vendor;
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		49B961D81C84DBBF003F8E3E /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				49B961D91C84DBBF003F8E3E /* extra */,
+				49B961E21C84DBBF003F8E3E /* fmdb */,
+			);
+			name = FMDB;
+			path = FastRent/Classes/Vendor/FMDB;
+			sourceTree = SOURCE_ROOT;
+		};
+		49B961D91C84DBBF003F8E3E /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				49B961DA1C84DBBF003F8E3E /* FMDatabase+InMemoryOnDiskIO.h */,
+				49B961DB1C84DBBF003F8E3E /* FMDatabase+InMemoryOnDiskIO.m */,
+				49B961DC1C84DBBF003F8E3E /* fts3 */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		49B961DC1C84DBBF003F8E3E /* fts3 */ = {
+			isa = PBXGroup;
+			children = (
+				49B961DD1C84DBBF003F8E3E /* FMDatabase+FTS3.h */,
+				49B961DE1C84DBBF003F8E3E /* FMDatabase+FTS3.m */,
+				49B961DF1C84DBBF003F8E3E /* FMTokenizers.h */,
+				49B961E01C84DBBF003F8E3E /* FMTokenizers.m */,
+				49B961E11C84DBBF003F8E3E /* fts3_tokenizer.h */,
+			);
+			path = fts3;
+			sourceTree = "<group>";
+		};
+		49B961E21C84DBBF003F8E3E /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				49B961E31C84DBBF003F8E3E /* FMDatabase.h */,
+				49B961E41C84DBBF003F8E3E /* FMDatabase.mm */,
+				49B961E51C84DBBF003F8E3E /* FMDatabaseAdditions.h */,
+				49B961E61C84DBBF003F8E3E /* FMDatabaseAdditions.m */,
+				49B961E71C84DBBF003F8E3E /* FMDatabasePool.h */,
+				49B961E81C84DBBF003F8E3E /* FMDatabasePool.m */,
+				49B961E91C84DBBF003F8E3E /* FMDatabaseQueue.h */,
+				49B961EA1C84DBBF003F8E3E /* FMDatabaseQueue.m */,
+				49B961EB1C84DBBF003F8E3E /* FMDB.h */,
+				49B961EC1C84DBBF003F8E3E /* FMResultSet.h */,
+				49B961ED1C84DBBF003F8E3E /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		5806AFEF1C56C98D002ECCBB /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				58E2698E1CDD915E00FF1F36 /* SevenSwitch */,
+				58D133F71C5FC0650059CA77 /* AccordionView */,
+				5806AFF11C56CA43002ECCBB /* FSCalendar */,
+				58499D7E1BFA3693009D6A85 /* AMSlideMenu */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		5806AFF01C56CA2C002ECCBB /* MainNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				589838861C56D32600ED69D9 /* MainNavigationController.h */,
+				589838871C56D32600ED69D9 /* MainNavigationController.m */,
+			);
+			name = MainNavigation;
+			sourceTree = "<group>";
+		};
+		5806AFF11C56CA43002ECCBB /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				581FD5441C59D9F400038FF4 /* FSCalendar.h */,
+				581FD5451C59D9F400038FF4 /* FSCalendar.m */,
+				581FD5461C59D9F400038FF4 /* FSCalendar+IBExtension.h */,
+				581FD5471C59D9F400038FF4 /* FSCalendar+IBExtension.m */,
+				581FD5481C59D9F400038FF4 /* FSCalendarAppearance.h */,
+				581FD5491C59D9F400038FF4 /* FSCalendarAppearance.m */,
+				581FD54A1C59D9F400038FF4 /* FSCalendarCell.h */,
+				581FD54B1C59D9F400038FF4 /* FSCalendarCell.m */,
+				581FD54C1C59D9F400038FF4 /* FSCalendarCollectionView.h */,
+				581FD54D1C59D9F400038FF4 /* FSCalendarCollectionView.m */,
+				581FD54E1C59D9F400038FF4 /* FSCalendarConstance.h */,
+				581FD54F1C59D9F400038FF4 /* FSCalendarConstance.m */,
+				581FD5501C59D9F400038FF4 /* FSCalendarDynamicHeader.h */,
+				581FD5511C59D9F400038FF4 /* FSCalendarFlowLayout.h */,
+				581FD5521C59D9F400038FF4 /* FSCalendarFlowLayout.m */,
+				581FD5531C59D9F400038FF4 /* FSCalendarHeader.h */,
+				581FD5541C59D9F400038FF4 /* FSCalendarHeader.m */,
+				581FD5551C59D9F400038FF4 /* FSCalendarStickyHeader.h */,
+				581FD5561C59D9F400038FF4 /* FSCalendarStickyHeader.m */,
+				581FD5571C59D9F400038FF4 /* Info.plist */,
+				581FD5581C59D9F400038FF4 /* NSDate+FSExtension.h */,
+				581FD5591C59D9F400038FF4 /* NSDate+FSExtension.m */,
+				581FD55A1C59D9F400038FF4 /* NSString+FSExtension.h */,
+				581FD55B1C59D9F400038FF4 /* NSString+FSExtension.m */,
+				581FD55C1C59D9F400038FF4 /* UIView+FSExtension.h */,
+				581FD55D1C59D9F400038FF4 /* UIView+FSExtension.m */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		582EE9BD1D0B631C008A41D9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				582EE9BE1D0B6340008A41D9 /* FRCommonTableViewCell.h */,
+				582EE9BF1D0B6340008A41D9 /* FRCommonTableViewCell.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		5832A8D61CB5BA920051339B /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				5832A8D71CB5BAAE0051339B /* FRFilterViewController.h */,
+				5832A8D81CB5BAAE0051339B /* FRFilterViewController.m */,
+			);
+			name = Filter;
+			sourceTree = "<group>";
+		};
+		58499D521BFA3358009D6A85 = {
+			isa = PBXGroup;
+			children = (
+				58499D5D1BFA3358009D6A85 /* FastRent */,
+				58499D751BFA3364009D6A85 /* Resources */,
+				58499DBB1BFA3BE1009D6A85 /* Frameworks */,
+				58499D5C1BFA3358009D6A85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58499D5C1BFA3358009D6A85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58499D5B1BFA3358009D6A85 /* FastRent Agenda Free.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58499D5D1BFA3358009D6A85 /* FastRent */ = {
+			isa = PBXGroup;
+			children = (
+				58499D761BFA3371009D6A85 /* Classes */,
+				58499D5E1BFA3358009D6A85 /* Supporting Files */,
+			);
+			path = FastRent;
+			sourceTree = "<group>";
+		};
+		58499D5E1BFA3358009D6A85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58499D6F1BFA3358009D6A85 /* Info.plist */,
+				58499D5F1BFA3358009D6A85 /* main.m */,
+				58499DBA1BFA3A22009D6A85 /* FastRent Agenda Free-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58499D751BFA3364009D6A85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				580314391DE3B85700A84ACE /* frdata_db.sqlite */,
+				58EE56221CD6ABC500387AA7 /* Fonts */,
+				58499D781BFA33D5009D6A85 /* GUI */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		58499D761BFA3371009D6A85 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				58499D611BFA3358009D6A85 /* AppDelegate.h */,
+				58499D621BFA3358009D6A85 /* AppDelegate.mm */,
+				49B961D71C84DB85003F8E3E /* Vendor */,
+				49B961D61C84DAA4003F8E3E /* Model */,
+				5806AFEF1C56C98D002ECCBB /* Controls */,
+				58499D791BFA3473009D6A85 /* Extension */,
+				589838841C56CCD100ED69D9 /* Utils */,
+				58499D771BFA3384009D6A85 /* GUI */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		58499D771BFA3384009D6A85 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				589B2C821D79D0EE00AD14AB /* Notifications */,
+				585AF6891D4AB1AD00911061 /* Profile */,
+				582EE9BD1D0B631C008A41D9 /* Common */,
+				5832A8D61CB5BA920051339B /* Filter */,
+				58BDD8331C864AA500551029 /* Custom Modal Presentation */,
+				589F475A1C9C8F2A00EBD830 /* Add Edit Components */,
+				58BDD8441C89004700551029 /* Add Edit Owners */,
+				58A6BCDE1C84E45C000FDB81 /* Add Edit Hosting */,
+				58D133FB1C5FC2560059CA77 /* Add Edit Booking */,
+				587D2EDC1C5E8497005413C1 /* Modal Navigation Bar */,
+				5806AFF01C56CA2C002ECCBB /* MainNavigation */,
+				58499D7D1BFA35B4009D6A85 /* MainMenu */,
+				589838891C56D4C900ED69D9 /* FRCalendarBookingViewController.h */,
+				5898388A1C56D4C900ED69D9 /* FRCalendarBookingViewController.mm */,
+				589838921C56DBCD00ED69D9 /* FRTaskRemainingViewController.h */,
+				589838931C56DBCD00ED69D9 /* FRTaskRemainingViewController.mm */,
+				589838951C56DC7900ED69D9 /* FRMyHostingsViewController.h */,
+				589838961C56DC7900ED69D9 /* FRMyHostingsViewController.mm */,
+				588DCBA11C580B2000FE6370 /* FRStatisticsViewController.h */,
+				588DCBA21C580B2000FE6370 /* FRStatisticsViewController.m */,
+				580211551D5762730016E399 /* FREmptyContentViewController.h */,
+				580211561D5762730016E399 /* FREmptyContentViewController.m */,
+				580E2C0A1D68AEB70061606B /* FRAboutUsViewController.h */,
+				580E2C0B1D68AEB70061606B /* FRAboutUsViewController.m */,
+				585A1B6F1DB55A96005287A0 /* FRNotificationsViewController.h */,
+				585A1B701DB55A96005287A0 /* FRNotificationsViewController.m */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		58499D781BFA33D5009D6A85 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				585AF6991D4AB61E00911061 /* FRProfileMenuTableViewCell.xib */,
+				582EE9C01D0B6340008A41D9 /* FRCommonTableViewCell.xib */,
+				58D885571CB7531D00D545A3 /* FRAccordionHeader.xib */,
+				58D885521CB703CC00D545A3 /* FRBookingListTableViewCell.xib */,
+				589F47541C99CA8700EBD830 /* FRPhotosTableViewCell.xib */,
+				589F474F1C99AEFB00EBD830 /* FRPhoneTableViewCell.xib */,
+				583884FB1C77C8D1003029C3 /* FRDatePickerView.xib */,
+				586A2A721C66E73100D9096C /* FRDateHeader.xib */,
+				58499D6A1BFA3358009D6A85 /* Assets.xcassets */,
+				58499D671BFA3358009D6A85 /* Main.storyboard */,
+				58D133FF1C5FC2FB0059CA77 /* FRDescriptionTableViewCell.xib */,
+				583885041C7C1661003029C3 /* FRPriceTableViewCell.xib */,
+				58A6BCE21C84E64D000FDB81 /* FRHostingListTableViewCell.xib */,
+				589B2C861D79D14100AD14AB /* FRNotificationCount.xib */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		58499D791BFA3473009D6A85 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5860D3191CC975DD001779AC /* NSString+MD5Addition.h */,
+				5860D31A1CC975DD001779AC /* NSString+MD5Addition.m */,
+				586B6F4F1CBEF46300BDBCC9 /* UIImage+AssetImage.h */,
+				586B6F501CBEF46300BDBCC9 /* UIImage+AssetImage.mm */,
+				58499D7A1BFA3473009D6A85 /* UIStoryboard+Bundle.h */,
+				58499D7B1BFA3473009D6A85 /* UIStoryboard+Bundle.m */,
+				584EF79C1D53ED00006043D2 /* NSString+FRFormatterPunctuation.h */,
+				584EF79D1D53ED00006043D2 /* NSString+FRFormatterPunctuation.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		58499D7D1BFA35B4009D6A85 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				58499D641BFA3358009D6A85 /* MainMenuViewController.h */,
+				58499D651BFA3358009D6A85 /* MainMenuViewController.m */,
+				58499D951BFA3712009D6A85 /* LeftMenu */,
+			);
+			name = MainMenu;
+			sourceTree = "<group>";
+		};
+		58499D7E1BFA3693009D6A85 /* AMSlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				58499DAC1BFA3820009D6A85 /* AMSlideMenuContentSegue.h */,
+				58499DAD1BFA3820009D6A85 /* AMSlideMenuContentSegue.m */,
+				58499DAE1BFA3820009D6A85 /* AMSlideMenuLeftMenuSegue.h */,
+				58499DAF1BFA3820009D6A85 /* AMSlideMenuLeftMenuSegue.m */,
+				58499DB01BFA3820009D6A85 /* AMSlideMenuRightMenuSegue.h */,
+				58499DB11BFA3820009D6A85 /* AMSlideMenuRightMenuSegue.m */,
+				58499D831BFA3693009D6A85 /* AMSlideMenuLeftTableViewController.h */,
+				58499D841BFA3693009D6A85 /* AMSlideMenuLeftTableViewController.m */,
+				58499D851BFA3693009D6A85 /* AMSlideMenuMainViewController.h */,
+				58499D861BFA3693009D6A85 /* AMSlideMenuMainViewController.m */,
+				58499D871BFA3693009D6A85 /* AMSlideMenuProtocols.h */,
+				58499D8A1BFA3693009D6A85 /* AMSlideMenuRightTableViewController.h */,
+				58499D8B1BFA3693009D6A85 /* AMSlideMenuRightTableViewController.m */,
+				58499D8C1BFA3693009D6A85 /* UIViewController+AMSlideMenu.h */,
+				58499D8D1BFA3693009D6A85 /* UIViewController+AMSlideMenu.m */,
+			);
+			path = AMSlideMenu;
+			sourceTree = "<group>";
+		};
+		58499D951BFA3712009D6A85 /* LeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				58499D961BFA3730009D6A85 /* LeftMenuTVC.h */,
+				58499D971BFA3730009D6A85 /* LeftMenuTVC.mm */,
+			);
+			name = LeftMenu;
+			sourceTree = "<group>";
+		};
+		58499DBB1BFA3BE1009D6A85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58239C171D64F40A00232C06 /* CoreTelephony.framework */,
+				58239C151D64ECDF00232C06 /* MessageUI.framework */,
+				5860D3131CC96BBF001779AC /* AdSupport.framework */,
+				58A76BEA1CC2F712007606E2 /* QuartzCore.framework */,
+				49B962011C84F5EF003F8E3E /* Security.framework */,
+				49B961FB1C84EEA6003F8E3E /* libz.tbd */,
+				49B961F91C84E139003F8E3E /* libsqlite3.tbd */,
+				58499DC01BFA3D28009D6A85 /* Foundation.framework */,
+				58499DBE1BFA3D20009D6A85 /* UIKit.framework */,
+				58499DBC1BFA3BF9009D6A85 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		585AF6891D4AB1AD00911061 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				585AF68A1D4AB1D200911061 /* FRAccountImageView.h */,
+				585AF68B1D4AB1D200911061 /* FRAccountImageView.m */,
+				585AF6971D4AB61E00911061 /* FRProfileMenuTableViewCell.h */,
+				585AF6981D4AB61E00911061 /* FRProfileMenuTableViewCell.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		5860D30B1CC595E7001779AC /* UICKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				5860D30C1CC595E7001779AC /* UICKeyChainStore.h */,
+				5860D30D1CC595E7001779AC /* UICKeyChainStore.m */,
+			);
+			name = UICKeyChainStore;
+			path = FastRent/Classes/Vendor/UICKeyChainStore;
+			sourceTree = SOURCE_ROOT;
+		};
+		587D2EDC1C5E8497005413C1 /* Modal Navigation Bar */ = {
+			isa = PBXGroup;
+			children = (
+				587D2EDD1C5E84B3005413C1 /* FRModalNavigationBar.h */,
+				587D2EDE1C5E84B3005413C1 /* FRModalNavigationBar.m */,
+			);
+			name = "Modal Navigation Bar";
+			sourceTree = "<group>";
+		};
+		589838841C56CCD100ED69D9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				586B6F521CBEFB2100BDBCC9 /* Utilities.h */,
+				586B6F531CBEFB2100BDBCC9 /* Utilities.mm */,
+				589F47571C9A576B00EBD830 /* FRImagePool.h */,
+				589F47581C9A576B00EBD830 /* FRImagePool.m */,
+				583885001C77C983003029C3 /* Types.h */,
+				589838851C56CCFE00ED69D9 /* FRLanguage.h */,
+				58BDD8371C869B1900551029 /* FRGlobals.h */,
+				49B961F61C84DC21003F8E3E /* FRDBUtils.h */,
+				49B961F71C84DC21003F8E3E /* FRDBUtils.m */,
+				5832A8D31CB5B7160051339B /* FRFilterInfo.h */,
+				5832A8D41CB5B7160051339B /* FRFilterInfo.m */,
+				586B6F4C1CBEF0A800BDBCC9 /* FRConfigurationManager.h */,
+				586B6F4D1CBEF0A800BDBCC9 /* FRConfigurationManager.m */,
+				588F6CA71D88997600428381 /* FRNotificationManager.h */,
+				588F6CA81D88997600428381 /* FRNotificationManager.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		589B2C821D79D0EE00AD14AB /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				589B2C831D79D11A00AD14AB /* FRNotificationCount.h */,
+				589B2C841D79D11A00AD14AB /* FRNotificationCount.m */,
+			);
+			name = Notifications;
+			sourceTree = "<group>";
+		};
+		589F475A1C9C8F2A00EBD830 /* Add Edit Components */ = {
+			isa = PBXGroup;
+			children = (
+				583884FD1C77C8EB003029C3 /* FRDatePickerView.h */,
+				583884FE1C77C8EB003029C3 /* FRDatePickerView.m */,
+				586A2A741C66E77400D9096C /* FRDateHeader.h */,
+				586A2A751C66E77400D9096C /* FRDateHeader.m */,
+				58D133FC1C5FC2B80059CA77 /* FRDescriptionTableViewCell.h */,
+				58D133FD1C5FC2B80059CA77 /* FRDescriptionTableViewCell.m */,
+				583885011C7C1636003029C3 /* FRPriceTableViewCell.h */,
+				583885021C7C1636003029C3 /* FRPriceTableViewCell.m */,
+				589F474D1C99AEFB00EBD830 /* FRPhoneTableViewCell.h */,
+				589F474E1C99AEFB00EBD830 /* FRPhoneTableViewCell.m */,
+				589F47521C99CA8700EBD830 /* FRPhotosTableViewCell.h */,
+				589F47531C99CA8700EBD830 /* FRPhotosTableViewCell.m */,
+				589F475B1C9C8FCB00EBD830 /* FRCommonEditTableViewCell.h */,
+				589F475C1C9C8FCB00EBD830 /* FRCommonEditTableViewCell.m */,
+			);
+			name = "Add Edit Components";
+			sourceTree = "<group>";
+		};
+		58A6BCDE1C84E45C000FDB81 /* Add Edit Hosting */ = {
+			isa = PBXGroup;
+			children = (
+				58BDD8301C86460000551029 /* FRAddEditHostingViewController.h */,
+				58BDD8311C86460000551029 /* FRAddEditHostingViewController.mm */,
+			);
+			name = "Add Edit Hosting";
+			sourceTree = "<group>";
+		};
+		58BDD8331C864AA500551029 /* Custom Modal Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				58BDD8341C864AE400551029 /* FRCustomModalViewController.h */,
+				58BDD8351C864AE400551029 /* FRCustomModalViewController.m */,
+			);
+			name = "Custom Modal Presentation";
+			sourceTree = "<group>";
+		};
+		58BDD8441C89004700551029 /* Add Edit Owners */ = {
+			isa = PBXGroup;
+			children = (
+				589F475E1CA33E9C00EBD830 /* FRAddEditOwnerViewController.h */,
+				589F475F1CA33E9C00EBD830 /* FRAddEditOwnerViewController.mm */,
+			);
+			name = "Add Edit Owners";
+			sourceTree = "<group>";
+		};
+		58D133F71C5FC0650059CA77 /* AccordionView */ = {
+			isa = PBXGroup;
+			children = (
+				58D133F81C5FC0880059CA77 /* AccordionView.h */,
+				58D133F91C5FC0880059CA77 /* AccordionView.m */,
+			);
+			path = AccordionView;
+			sourceTree = "<group>";
+		};
+		58D133FB1C5FC2560059CA77 /* Add Edit Booking */ = {
+			isa = PBXGroup;
+			children = (
+				585A1B721DB57932005287A0 /* FRAddEditBookingViewController.h */,
+				585A1B731DB57932005287A0 /* FRAddEditBookingViewController.mm */,
+				587D2EA61C5D466C005413C1 /* FRFakeAddEditBookingViewController.h */,
+				587D2EA71C5D466C005413C1 /* FRFakeAddEditBookingViewController.mm */,
+				5824D22E1CA97B6500EE3BBA /* FRBookingListTableViewCell.h */,
+				5824D22F1CA97B6500EE3BBA /* FRBookingListTableViewCell.m */,
+			);
+			name = "Add Edit Booking";
+			sourceTree = "<group>";
+		};
+		58E2698E1CDD915E00FF1F36 /* SevenSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				58E2698F1CDD924900FF1F36 /* SevenSwitch.h */,
+				58E269901CDD924900FF1F36 /* SevenSwitch.m */,
+			);
+			path = SevenSwitch;
+			sourceTree = "<group>";
+		};
+		58EE56221CD6ABC500387AA7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				58EE56271CDC46BE00387AA7 /* Roboto-Bold.ttf */,
+				58EE56281CDC46BE00387AA7 /* Roboto-Regular.ttf */,
+				58EE56251CD6ACD300387AA7 /* MyriadPro-Bold.otf */,
+				58EE56231CD6ABE300387AA7 /* MyriadPro-Regular.otf */,
+			);
+			name = Fonts;
+			path = FastRent/Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58499D5A1BFA3358009D6A85 /* FastRent Agenda Free */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58499D721BFA3358009D6A85 /* Build configuration list for PBXNativeTarget "FastRent Agenda Free" */;
+			buildPhases = (
+				58499D571BFA3358009D6A85 /* Sources */,
+				58499D581BFA3358009D6A85 /* Frameworks */,
+				58499D591BFA3358009D6A85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FastRent Agenda Free";
+			productName = FastRent;
+			productReference = 58499D5B1BFA3358009D6A85 /* FastRent Agenda Free.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58499D531BFA3358009D6A85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FR;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Marvin Avila Kotliarov";
+				TargetAttributes = {
+					58499D5A1BFA3358009D6A85 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = V7W78EWJCY;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 58499D561BFA3358009D6A85 /* Build configuration list for PBXProject "FastRent Agenda Free" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58499D521BFA3358009D6A85;
+			productRefGroup = 58499D5C1BFA3358009D6A85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58499D5A1BFA3358009D6A85 /* FastRent Agenda Free */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58499D591BFA3358009D6A85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58A6BCE41C84E64D000FDB81 /* FRHostingListTableViewCell.xib in Resources */,
+				589F47561C99CA8700EBD830 /* FRPhotosTableViewCell.xib in Resources */,
+				58D134011C5FC2FB0059CA77 /* FRDescriptionTableViewCell.xib in Resources */,
+				58D885531CB703CC00D545A3 /* FRBookingListTableViewCell.xib in Resources */,
+				589F47511C99AEFB00EBD830 /* FRPhoneTableViewCell.xib in Resources */,
+				586A2A731C66E73100D9096C /* FRDateHeader.xib in Resources */,
+				58EE562A1CDC46BE00387AA7 /* Roboto-Regular.ttf in Resources */,
+				58499D6B1BFA3358009D6A85 /* Assets.xcassets in Resources */,
+				583884FC1C77C8D1003029C3 /* FRDatePickerView.xib in Resources */,
+				58499D691BFA3358009D6A85 /* Main.storyboard in Resources */,
+				58EE56241CD6ABE300387AA7 /* MyriadPro-Regular.otf in Resources */,
+				58EE56291CDC46BE00387AA7 /* Roboto-Bold.ttf in Resources */,
+				581FD5671C59D9F400038FF4 /* Info.plist in Resources */,
+				589B2C881D79D14100AD14AB /* FRNotificationCount.xib in Resources */,
+				583885051C7C1661003029C3 /* FRPriceTableViewCell.xib in Resources */,
+				585AF69B1D4AB61E00911061 /* FRProfileMenuTableViewCell.xib in Resources */,
+				58EE56261CD6ACD300387AA7 /* MyriadPro-Bold.otf in Resources */,
+				582EE9C21D0B6340008A41D9 /* FRCommonTableViewCell.xib in Resources */,
+				58D885581CB7531D00D545A3 /* FRAccordionHeader.xib in Resources */,
+				5803143A1DE3B85700A84ACE /* frdata_db.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58499D571BFA3358009D6A85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				588DCBA31C580B2000FE6370 /* FRStatisticsViewController.m in Sources */,
+				587D2EDF1C5E84B3005413C1 /* FRModalNavigationBar.m in Sources */,
+				49B962111C86984C003F8E3E /* FRClient.m in Sources */,
+				584EF79E1D53ED00006043D2 /* NSString+FRFormatterPunctuation.m in Sources */,
+				585AF69A1D4AB61E00911061 /* FRProfileMenuTableViewCell.m in Sources */,
+				49B9620C1C855BB8003F8E3E /* FRAccount.m in Sources */,
+				5860D31B1CC975DD001779AC /* NSString+MD5Addition.m in Sources */,
+				581FD5691C59D9F400038FF4 /* NSString+FSExtension.m in Sources */,
+				581FD5641C59D9F400038FF4 /* FSCalendarFlowLayout.m in Sources */,
+				58499D941BFA3693009D6A85 /* UIViewController+AMSlideMenu.m in Sources */,
+				49B961F01C84DBBF003F8E3E /* FMTokenizers.m in Sources */,
+				580E2C0C1D68AEB70061606B /* FRAboutUsViewController.m in Sources */,
+				581FD56A1C59D9F400038FF4 /* UIView+FSExtension.m in Sources */,
+				58D133FA1C5FC0880059CA77 /* AccordionView.m in Sources */,
+				586A2A761C66E77400D9096C /* FRDateHeader.m in Sources */,
+				581FD5661C59D9F400038FF4 /* FSCalendarStickyHeader.m in Sources */,
+				58E269911CDD924900FF1F36 /* SevenSwitch.m in Sources */,
+				589F475D1C9C8FCB00EBD830 /* FRCommonEditTableViewCell.m in Sources */,
+				581FD5601C59D9F400038FF4 /* FSCalendarAppearance.m in Sources */,
+				589F47551C99CA8700EBD830 /* FRPhotosTableViewCell.m in Sources */,
+				583885031C7C1636003029C3 /* FRPriceTableViewCell.m in Sources */,
+				5898388B1C56D4C900ED69D9 /* FRCalendarBookingViewController.mm in Sources */,
+				583884FF1C77C8EB003029C3 /* FRDatePickerView.m in Sources */,
+				5832A8D51CB5B7160051339B /* FRFilterInfo.m in Sources */,
+				58499D981BFA3730009D6A85 /* LeftMenuTVC.mm in Sources */,
+				49B961F31C84DBBF003F8E3E /* FMDatabasePool.m in Sources */,
+				581FD5651C59D9F400038FF4 /* FSCalendarHeader.m in Sources */,
+				588F6CA91D88997600428381 /* FRNotificationManager.m in Sources */,
+				58499DB31BFA3820009D6A85 /* AMSlideMenuLeftMenuSegue.m in Sources */,
+				49B961EE1C84DBBF003F8E3E /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
+				589F47601CA33E9C00EBD830 /* FRAddEditOwnerViewController.mm in Sources */,
+				585A1B741DB57932005287A0 /* FRAddEditBookingViewController.mm in Sources */,
+				589F47501C99AEFB00EBD830 /* FRPhoneTableViewCell.m in Sources */,
+				58499D7C1BFA3473009D6A85 /* UIStoryboard+Bundle.m in Sources */,
+				5824D2311CA97B6500EE3BBA /* FRBookingListTableViewCell.m in Sources */,
+				58499DB41BFA3820009D6A85 /* AMSlideMenuRightMenuSegue.m in Sources */,
+				5860D30E1CC595E7001779AC /* UICKeyChainStore.m in Sources */,
+				49B961F11C84DBBF003F8E3E /* FMDatabase.mm in Sources */,
+				58499D931BFA3693009D6A85 /* AMSlideMenuRightTableViewController.m in Sources */,
+				58499D911BFA3693009D6A85 /* AMSlideMenuMainViewController.m in Sources */,
+				582EE9C11D0B6340008A41D9 /* FRCommonTableViewCell.m in Sources */,
+				49B961F81C84DC21003F8E3E /* FRDBUtils.m in Sources */,
+				581FD55E1C59D9F400038FF4 /* FSCalendar.m in Sources */,
+				581FD55F1C59D9F400038FF4 /* FSCalendar+IBExtension.m in Sources */,
+				58BDD8321C86460000551029 /* FRAddEditHostingViewController.mm in Sources */,
+				58499D661BFA3358009D6A85 /* MainMenuViewController.m in Sources */,
+				49B962051C8501DE003F8E3E /* FRDataAccess.m in Sources */,
+				49B961F51C84DBBF003F8E3E /* FMResultSet.m in Sources */,
+				49B962141C869FC2003F8E3E /* FRState.m in Sources */,
+				585AF68C1D4AB1D200911061 /* FRAccountImageView.m in Sources */,
+				586B6F4E1CBEF0A800BDBCC9 /* FRConfigurationManager.m in Sources */,
+				580211571D5762730016E399 /* FREmptyContentViewController.m in Sources */,
+				589B2C851D79D11A00AD14AB /* FRNotificationCount.m in Sources */,
+				58499D631BFA3358009D6A85 /* AppDelegate.mm in Sources */,
+				587D2EA81C5D466C005413C1 /* FRFakeAddEditBookingViewController.mm in Sources */,
+				589838881C56D32600ED69D9 /* MainNavigationController.m in Sources */,
+				49B961F21C84DBBF003F8E3E /* FMDatabaseAdditions.m in Sources */,
+				58BDD8361C864AE400551029 /* FRCustomModalViewController.m in Sources */,
+				589838971C56DC7900ED69D9 /* FRMyHostingsViewController.mm in Sources */,
+				581FD5621C59D9F400038FF4 /* FSCalendarCollectionView.m in Sources */,
+				49B961EF1C84DBBF003F8E3E /* FMDatabase+FTS3.m in Sources */,
+				581FD5611C59D9F400038FF4 /* FSCalendarCell.m in Sources */,
+				58499D901BFA3693009D6A85 /* AMSlideMenuLeftTableViewController.m in Sources */,
+				581FD5631C59D9F400038FF4 /* FSCalendarConstance.m in Sources */,
+				5832A8D91CB5BAAE0051339B /* FRFilterViewController.m in Sources */,
+				586B6F511CBEF46300BDBCC9 /* UIImage+AssetImage.mm in Sources */,
+				49B961F41C84DBBF003F8E3E /* FMDatabaseQueue.m in Sources */,
+				581FD5681C59D9F400038FF4 /* NSDate+FSExtension.m in Sources */,
+				58499DB21BFA3820009D6A85 /* AMSlideMenuContentSegue.m in Sources */,
+				585A1B711DB55A96005287A0 /* FRNotificationsViewController.m in Sources */,
+				49C691B31C88BD3100C19D88 /* FRBooking.m in Sources */,
+				589838941C56DBCD00ED69D9 /* FRTaskRemainingViewController.mm in Sources */,
+				589F47591C9A576B00EBD830 /* FRImagePool.m in Sources */,
+				586B6F541CBEFB2100BDBCC9 /* Utilities.mm in Sources */,
+				58D133FE1C5FC2B80059CA77 /* FRDescriptionTableViewCell.m in Sources */,
+				58499D601BFA3358009D6A85 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58499D671BFA3358009D6A85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58499D681BFA3358009D6A85 /* Base */,
+				584EF7911D50F147006043D2 /* es */,
+			);
+			name = Main.storyboard;
+			path = FastRent;
+			sourceTree = "<group>";
+		};
+		589B2C861D79D14100AD14AB /* FRNotificationCount.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				589B2C871D79D14100AD14AB /* Base */,
+			);
+			name = FRNotificationCount.xib;
+			sourceTree = "<group>";
+		};
+		58A6BCE21C84E64D000FDB81 /* FRHostingListTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58A6BCE31C84E64D000FDB81 /* Base */,
+				584EF7961D50F147006043D2 /* es */,
+			);
+			name = FRHostingListTableViewCell.xib;
+			sourceTree = "<group>";
+		};
+		58D133FF1C5FC2FB0059CA77 /* FRDescriptionTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58D134001C5FC2FB0059CA77 /* Base */,
+				584EF7921D50F147006043D2 /* es */,
+			);
+			name = FRDescriptionTableViewCell.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58499D701BFA3358009D6A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58499D711BFA3358009D6A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58499D731BFA3358009D6A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				GCC_PREFIX_HEADER = "FastRent/FastRent Agenda Free-Prefix.pch";
+				INFOPLIST_FILE = FastRent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mak.FastRentFree;
+				PRODUCT_NAME = "FastRent Agenda Free";
+			};
+			name = Debug;
+		};
+		58499D741BFA3358009D6A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				GCC_PREFIX_HEADER = "FastRent/FastRent Agenda Free-Prefix.pch";
+				INFOPLIST_FILE = FastRent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mak.FastRentFree;
+				PRODUCT_NAME = "FastRent Agenda Free";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58499D561BFA3358009D6A85 /* Build configuration list for PBXProject "FastRent Agenda Free" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58499D701BFA3358009D6A85 /* Debug */,
+				58499D711BFA3358009D6A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58499D721BFA3358009D6A85 /* Build configuration list for PBXNativeTarget "FastRent Agenda Free" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58499D731BFA3358009D6A85 /* Debug */,
+				58499D741BFA3358009D6A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58499D531BFA3358009D6A85 /* Project object */;
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FRPhotosTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TY3-T4-C33">
+                        <rect key="frame" x="0.0" y="-1" width="320" height="201"/>
+                        <gestureRecognizers/>
+                    </imageView>
+                    <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Q7-Pl-MWK">
+                        <rect key="frame" x="0.0" y="155" width="320" height="44"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="1dF-bl-aiR">
+                                <rect key="frame" x="140" y="4" width="39" height="37"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skq-ax-ilK">
+                                <rect key="frame" x="276" y="3" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="6Uu-6Q-uRI"/>
+                                    <constraint firstAttribute="height" constant="40" id="7Sr-vP-K0E"/>
+                                </constraints>
+                                <state key="normal" image="DelPhotoButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0I-w9-9yK">
+                                <rect key="frame" x="0.0" y="13" width="56" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="A9w-Ms-Q5N"/>
+                                    <constraint firstAttribute="width" constant="56" id="nab-gh-cVK"/>
+                                </constraints>
+                                <state key="normal" image="AddPhotoButton"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="skq-ax-ilK" secondAttribute="trailing" constant="4" id="RCJ-WI-4ud"/>
+                            <constraint firstItem="1dF-bl-aiR" firstAttribute="centerY" secondItem="skq-ax-ilK" secondAttribute="centerY" id="WGc-5f-7dE"/>
+                            <constraint firstItem="1dF-bl-aiR" firstAttribute="leading" secondItem="Q0I-w9-9yK" secondAttribute="trailing" constant="84" id="geG-gC-30r"/>
+                            <constraint firstItem="skq-ax-ilK" firstAttribute="centerY" secondItem="9Q7-Pl-MWK" secondAttribute="centerY" constant="1" id="kFe-qq-kOp"/>
+                            <constraint firstAttribute="height" constant="44" id="kkU-lw-UPL"/>
+                            <constraint firstItem="Q0I-w9-9yK" firstAttribute="bottom" secondItem="9Q7-Pl-MWK" secondAttribute="bottomMargin" id="myH-mh-1mB"/>
+                            <constraint firstItem="Q0I-w9-9yK" firstAttribute="leading" secondItem="9Q7-Pl-MWK" secondAttribute="leading" id="sBL-l8-yEf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TY3-T4-C33" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7EH-xN-eII"/>
+                    <constraint firstAttribute="bottom" secondItem="9Q7-Pl-MWK" secondAttribute="bottom" constant="-1" id="AbM-DK-H51"/>
+                    <constraint firstAttribute="bottom" secondItem="9Q7-Pl-MWK" secondAttribute="bottom" constant="-1" id="FVA-Wt-iVT"/>
+                    <constraint firstAttribute="bottom" secondItem="9Q7-Pl-MWK" secondAttribute="bottom" constant="-1" id="VOH-MS-eH3"/>
+                    <constraint firstAttribute="bottom" secondItem="9Q7-Pl-MWK" secondAttribute="bottom" id="Vli-9N-rZI"/>
+                    <constraint firstItem="TY3-T4-C33" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="hWD-Ol-JTf"/>
+                    <constraint firstItem="9Q7-Pl-MWK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ur2-xC-qEL"/>
+                    <constraint firstItem="9Q7-Pl-MWK" firstAttribute="width" secondItem="TY3-T4-C33" secondAttribute="width" id="zE9-wT-CpM"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="AbM-DK-H51"/>
+                        <exclude reference="FVA-Wt-iVT"/>
+                        <exclude reference="VOH-MS-eH3"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="TY3-T4-C33" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" id="Vz9-ID-hCU"/>
+                <constraint firstItem="TY3-T4-C33" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" id="kKt-kH-lBG"/>
+            </constraints>
+            <connections>
+                <outlet property="addPhotoBtn" destination="Q0I-w9-9yK" id="nct-ua-2bP"/>
+                <outlet property="delPhotoBtn" destination="skq-ax-ilK" id="ina-9o-1yR"/>
+                <outlet property="photosImgView" destination="TY3-T4-C33" id="nhk-C0-30e"/>
+                <outlet property="photosPgControl" destination="1dF-bl-aiR" id="fd4-kr-Cfs"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="AddPhotoButton" width="23" height="23"/>
+        <image name="DelPhotoButton" width="17" height="24"/>
+    </resources>
+</document>
