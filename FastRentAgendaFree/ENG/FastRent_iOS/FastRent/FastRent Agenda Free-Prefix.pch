@@ -1,0 +1,20 @@
+//
+//  FastRentPrefix.pch
+//  FastRent
+//
+//  Created by Marvin Avila Kotliarov on 11/16/15.
+//  Copyright © 2015 Marvin Avila Kotliarov. All rights reserved.
+//
+
+#ifndef FastRentPrefix_pch
+#define FastRentPrefix_pch
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+#define AMSlideMenuWithoutStoryboards
+
+#endif /* FastRentPrefix_pch */
